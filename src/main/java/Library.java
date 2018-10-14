@@ -88,10 +88,19 @@ public class Library {
             intPart=intPart.remainder(BigDecimal.TEN.pow(power));
             power=power-3;
             System.out.println(dividedArray[i] +" " + decadesMap.get(((power/3)+1)));
-//            intLength=intLength-3;
 
         }
-//        dividedArray[(intLength)/3]=intPart;
+        splitUnits(new BigDecimal(549));
+    }
+    public void splitUnits(BigDecimal number){
+        BigDecimal ekatontades = number.divide(new BigDecimal(100),0,RoundingMode.DOWN);
+        BigDecimal upolipo = number.remainder(new BigDecimal(100));
+        BigDecimal dekades = upolipo.divide(new BigDecimal(10),0,RoundingMode.DOWN);
+        BigDecimal monades = number.divide(new BigDecimal(100),0,RoundingMode.DOWN).remainder(new BigDecimal(10));
+        System.out.println(ekatontades);
+        System.out.println(dekades);
+        System.out.println(monades);
 
     }
+
 }
