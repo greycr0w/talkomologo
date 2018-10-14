@@ -87,19 +87,36 @@ public class Library {
 
             intPart=intPart.remainder(BigDecimal.TEN.pow(power));
             power=power-3;
-            System.out.println(dividedArray[i] +" " + decadesMap.get(((power/3)+1)));
+            System.out.println(splitUnits(dividedArray[i]) +" " + decadesMap.get(((power/3)+1)));
 
         }
-        splitUnits(new BigDecimal(549));
+        System.out.println(splitUnits(new BigDecimal(549)));
     }
-    public void splitUnits(BigDecimal number){
+    public String splitUnits(BigDecimal number){
         BigDecimal ekatontades = number.divide(new BigDecimal(100),0,RoundingMode.DOWN);
         BigDecimal upolipo = number.remainder(new BigDecimal(100));
         BigDecimal dekades = upolipo.divide(new BigDecimal(10),0,RoundingMode.DOWN);
-        BigDecimal monades = number.divide(new BigDecimal(100),0,RoundingMode.DOWN).remainder(new BigDecimal(10));
-        System.out.println(ekatontades);
-        System.out.println(dekades);
-        System.out.println(monades);
+        upolipo = upolipo.remainder(new BigDecimal(10));
+        BigDecimal monades = upolipo;
+        String ekatontadesString ="";
+        String dekadesString ="";
+        String monadesString = "";
+        if(ekatontades.compareTo(BigDecimal.ZERO)!=0){
+            ekatontadesString = numberMap.get(ekatontades.multiply(new BigDecimal(100)))+" ";
+        }
+        if(dekades.compareTo(BigDecimal.ZERO) !=0){
+            dekadesString = numberMap.get(dekades.multiply(new BigDecimal(10))) +" ";
+        }
+        if( monades.compareTo(BigDecimal.ZERO) !=0){
+            monadesString=numberMap.get(monades);
+        }
+
+
+//        System.out.println(ekatontades);
+//        System.out.println(dekades);
+//        System.out.println(monades);
+
+        return (ekatontadesString+dekadesString+monadesString);
 
     }
 

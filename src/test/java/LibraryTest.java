@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class LibraryTest {
     @Test public void testSomeLibraryMethod() {
         Library classUnderTest = new Library();
-        classUnderTest.init(new BigDecimal("2344343141241100.222"));
+        classUnderTest.init(new BigDecimal("11344343141241100.222"));
         classUnderTest.split();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
 
