@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/first-project-library.iml" filepath="$PROJECT_DIR$/first-project-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/first-project-library_main.iml" filepath="$PROJECT_DIR$/.idea/modules/first-project-library_main.iml" group="first-project-library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/first-project-library_test.iml" filepath="$PROJECT_DIR$/.idea/modules/first-project-library_test.iml" group="first-project-library" />
+    </modules>
+  </component>
+</project>
