@@ -25,18 +25,15 @@ OTHER DEALINGS IN THE SOFTWARE.
 For more information, please refer to <http://unlicense.org>
  */
 
-import com.sun.xml.internal.ws.util.StringUtils;
-
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class Library
 {
     private BigDecimal givenNumber;
-    private String telikosArithmos;
+    private String telikosArithmos = "";
     private String dekadikoMeros = "";
     private String akeraioMeros = "";
     private int intLength;
@@ -149,18 +146,19 @@ public class Library
 
             decimalPart = new BigDecimal(s1[1]);
             decLength = decimalPart.precision() - decimalPart.scale();
-            power = (decLength - 1) / 3 * 3;
-
-            Arrays.fill(dividedArray, null); //Nullify array
-
-            for (int i = 0; i < (decLength - 1) / 3 + 1; i++)
-            {
-                dividedArray[i] = decimalPart.divide(BigDecimal.TEN.pow(power), 0, RoundingMode.DOWN);
-
-                decimalPart = decimalPart.remainder(BigDecimal.TEN.pow(power));
-                power = power - 3;
-                dekadikoMeros += " και " + (splitUnits(dividedArray[i]) + " " + decadesMap.get(((power / 3) + 1)));
-            }
+            dekadikoMeros = "και " + decimalPart.toString();
+//            power = (decLength - 1) / 3 * 3;
+//
+//            Arrays.fill(dividedArray, null); //Nullify array
+//
+//            for (int i = 0; i < (decLength - 1) / 3 + 1; i++)
+//            {
+//                dividedArray[i] = decimalPart.divide(BigDecimal.TEN.pow(power), 0, RoundingMode.DOWN);
+//
+//                decimalPart = decimalPart.remainder(BigDecimal.TEN.pow(power));
+//                power = power - 3;
+//                dekadikoMeros += " και " + (splitUnits(dividedArray[i]) + " " + decadesMap.get(((power / 3) + 1)));
+//            }
 
         }
 
@@ -171,7 +169,7 @@ public class Library
         telikosArithmos = telikosArithmos.replace("δέκα ένα", "έντεκα");
         telikosArithmos = telikosArithmos.replaceAll("\\s+", " ");
         telikosArithmos = telikosArithmos.trim(); //Trim leading and trailing spaces
-        telikosArithmos = StringUtils.capitalize(telikosArithmos); //Capitalize first letter
+        telikosArithmos = telikosArithmos.substring(0, 1).toUpperCase() + telikosArithmos.substring(1);
         System.out.println(telikosArithmos);
 
     }
