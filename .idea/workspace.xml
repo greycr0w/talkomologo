@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0b2a5159-b1e3-4f89-af96-eb855e568f59" name="Default" comment="hh">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/first-project-library_main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/first-project-library_main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/first-project-library_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/first-project-library_test.iml" afterDir="false" />
+    <list default="true" id="0b2a5159-b1e3-4f89-af96-eb855e568f59" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Library.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/LibraryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Library.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LibraryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,7 +65,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="196">
-              <caret line="175" column="71" selection-start-line="175" selection-start-column="71" selection-end-line="175" selection-end-column="71" />
+              <caret line="177" column="60" lean-forward="true" selection-start-line="177" selection-start-column="60" selection-end-line="177" selection-end-column="60" />
               <folding>
                 <element signature="e#0#7345#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -421,8 +415,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="width" value="977" />
+    <option name="x" value="-9" />
+    <option name="width" value="978" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -605,7 +599,7 @@
       <workItem from="1539535081351" duration="77000" />
       <workItem from="1539535956584" duration="1007000" />
       <workItem from="1539537133007" duration="4000" />
-      <workItem from="1539550596303" duration="23359000" />
+      <workItem from="1539550596303" duration="23588000" />
     </task>
     <task id="LOCAL-00001" summary="hh">
       <created>1539549053244</created>
@@ -614,16 +608,17 @@
       <option name="project" value="LOCAL" />
       <updated>1539549053244</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Implemented decimal part&#10;Code clean up&#10;Couple of dirty fixes for 12 and 11 among others.">
+      <created>1539574326948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1539574326948</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest_testSomeLibraryMethod - 2018.10.15 at 06h 18m 20s.xml">
-      <configuration name="LibraryTest.testSomeLibraryMethod" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testSomeLibraryMethod - 2018.10.15 at 06h 18m 31s.xml">
-      <configuration name="LibraryTest.testSomeLibraryMethod" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibraryTest_testSomeLibraryMethod - 2018.10.15 at 06h 18m 53s.xml">
       <configuration name="LibraryTest.testSomeLibraryMethod" configurationId="JUnit" />
     </history-entry>
@@ -648,9 +643,15 @@
     <history-entry file="LibraryTest_testSomeLibraryMethod - 2018.10.15 at 06h 28m 23s.xml">
       <configuration name="LibraryTest.testSomeLibraryMethod" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LibraryTest_testSomeLibraryMethod - 2018.10.15 at 06h 29m 24s.xml">
+      <configuration name="LibraryTest.testSomeLibraryMethod" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testSomeLibraryMethod - 2018.10.15 at 06h 29m 50s.xml">
+      <configuration name="LibraryTest.testSomeLibraryMethod" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36911000" />
+    <option name="totallyTimeSpent" value="37140000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -663,7 +664,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993895" weight="0.32941177" />
@@ -673,7 +673,7 @@
       <window_info anchor="bottom" id="GitLabIntegration" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4920635" visible="true" weight="0.31320226" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4920635" weight="0.31320226" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3295302" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4981685" weight="0.3272472" />
@@ -743,7 +743,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hh" />
-    <option name="LAST_COMMIT_MESSAGE" value="hh" />
+    <MESSAGE value="Implemented decimal part&#10;Code clean up&#10;Couple of dirty fixes for 12 and 11 among others." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented decimal part&#10;Code clean up&#10;Couple of dirty fixes for 12 and 11 among others." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,7 +819,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/Library.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="175" column="71" selection-start-line="175" selection-start-column="71" selection-end-line="175" selection-end-column="71" />
+          <caret line="177" column="60" lean-forward="true" selection-start-line="177" selection-start-column="60" selection-end-line="177" selection-end-column="60" />
           <folding>
             <element signature="e#0#7345#0" expanded="true" />
             <element signature="imports" expanded="true" />

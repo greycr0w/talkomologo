@@ -103,7 +103,7 @@ public class Library
         givenNumber = aNumber;
 
         givenNumber = givenNumber.stripTrailingZeros();
-        givenNumber = givenNumber.setScale(2,RoundingMode.DOWN);
+        givenNumber = givenNumber.setScale(2, RoundingMode.DOWN);
         intLength = givenNumber.precision() - givenNumber.scale();
         intPart = givenNumber.setScale(0, RoundingMode.DOWN);
         decimalPart = givenNumber.remainder(BigDecimal.ONE);
@@ -127,8 +127,7 @@ public class Library
         if (intLength == 0) //Dirty fix
         {
             akeraioMeros = "μηδέν";
-        }
-        else
+        } else
         {
             for (int i = 0; i < (intLength - 1) / 3 + 1; i++)
             {
@@ -141,16 +140,12 @@ public class Library
             }
         }
 
-
         //Δεκαδικό μέρος
 
         if (decimalPart.scale() > 0) //Check for decimal part
         {
 
             String[] s1 = String.valueOf(decimalPart).split("\\."); // Get decimal part
-
-
-
 
             decimalPart = new BigDecimal(s1[1]);
             decLength = decimalPart.precision() - decimalPart.scale();
